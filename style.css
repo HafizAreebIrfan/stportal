@@ -1,0 +1,79 @@
+#main {
+  height: 100vh;
+  padding: 10px;
+  margin: 0;
+  background-color: #ffffff;
+}
+.container {
+  width: max-content;
+  height: auto;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 8px 2px #eeeeee;
+  transform: translateY(50%);
+  padding: 30px 50px;
+}
+.loginform,
+.regform {
+  padding: 20px;
+  text-align: center;
+}
+.loginform h1,
+.regform h1 {
+  font-size: 35px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.loginform h4,
+.regform h4 {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.loginform input,
+.regform input {
+  border-radius: 15px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  outline: none;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.loginform .submit,
+.regform .submit {
+  border-radius: 15px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #000000;
+}
+.loginform .submit:hover,
+.regform .submit:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.loginform .switch, .regform .switch {
+  font-size: 15px;
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  outline: none;
+  float: right;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
