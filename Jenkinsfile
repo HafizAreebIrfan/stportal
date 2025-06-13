@@ -2,21 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Lint PHP') {
             steps {
-                git 'https://github.com/HafizAreebIrfan/stportal.git'
-            }
-        }
-
-        stage('PHP Lint') {
-            steps {
-                sh 'find . -name "*.php" -exec php -l {} \;'
-            }
-        }
-
-        stage('Notify') {
-            steps {
-                echo 'Build and test completed!'
+                script {
+                    if (isUnix()) {
+                        sh 'find . -name "*.php" -exec php -l {} \\;'
+                    } else {
+                        bat 'for /r %%f in (*.php) do php -l "%%f"'
+                    }
+                }
             }
         }
     }
